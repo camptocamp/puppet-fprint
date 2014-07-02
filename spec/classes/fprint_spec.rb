@@ -22,7 +22,7 @@ describe 'fprint' do
     } }
 
     it 'should fail' do
-      expect { should compile }.to raise_error(Puppet::Error, /Unsupported operating system/)
+      expect { should contain_class('fprint::ubuntu') }.to raise_error(Puppet::Error, /Unsupported operating system/)
     end
   end
 end
