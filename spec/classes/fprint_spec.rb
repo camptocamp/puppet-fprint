@@ -13,7 +13,7 @@ describe 'fprint' do
       "include ::apt"
     }
 
-    it { should compile.with_all_deps }
+    it { is_expected.to compile.with_all_deps }
   end
 
   context 'when on an unknown OS' do
@@ -22,7 +22,7 @@ describe 'fprint' do
     } }
 
     it 'should fail' do
-      expect { should contain_class('fprint::ubuntu') }.to raise_error(Puppet::Error, /Unsupported operating system/)
+      expect { is_expected.to contain_class('fprint::ubuntu') }.to raise_error(Puppet::Error, /Unsupported operating system/)
     end
   end
 end
