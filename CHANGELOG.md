@@ -1,3 +1,7 @@
+## 2014-12-18 - Release 0.1.2
+
+Various improvements in unit tests
+
 ## 2014-12-10 Release 0.1.1
 
 Fix summary in metadata.json
